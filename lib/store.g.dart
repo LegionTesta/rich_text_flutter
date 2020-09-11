@@ -68,11 +68,11 @@ mixin _$HtmlStore on _HtmlStore, Store {
   }
 
   @override
-  void addStyle() {
+  void addStyle({String color, String backgroundColor}) {
     final _$actionInfo =
         _$_HtmlStoreActionController.startAction(name: '_HtmlStore.addStyle');
     try {
-      return super.addStyle();
+      return super.addStyle(color: color, backgroundColor: backgroundColor);
     } finally {
       _$_HtmlStoreActionController.endAction(_$actionInfo);
     }

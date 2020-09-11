@@ -50,10 +50,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     RaisedButton(
                       onPressed: () {
-                        htmlStore.addStyle();
+                        htmlStore.addStyle(color: "red", backgroundColor: "darkred");
                       },
-                      child: Text(htmlStore.backgroundColor),
-                  )
+                      child: Text("Red"),
+                    ),
+                    RaisedButton(
+                      onPressed: () {
+                        htmlStore.addStyle(color: "green", backgroundColor: "darkgreen");
+                      },
+                      child: Text("Green"),
+                    ),
+                    RaisedButton(
+                      onPressed: () {
+                        htmlStore.addStyle(color: "blue", backgroundColor: "darkblue");
+                      },
+                      child: Text("Blue"),
+                    ),
                 ],
               );
             }
